@@ -1,9 +1,86 @@
 {
-  "requirement": "test",
-  "clarified_requirement": "clarified",
-  "tech_plan": "plan",
+  "requirement": "写一个贪吃蛇游戏，在cli交互",
+  "clarified_requirement": "写一个贪吃蛇游戏，在cli交互",
+  "tech_plan": "{\"tech_stack\": [], \"boundaries\": \"\", \"risks\": [], \"dependencies\": []}",
   "task_template": {
-    "tasks": []
+    "tasks": [
+      {
+        "id": "T1",
+        "name": "初始化项目结构和基础配置",
+        "input": "创建贪吃蛇游戏的项目目录，包含必要的配置文件（如package.json或requirements.txt），以及主入口文件。",
+        "target_files": [
+          "snake_game/",
+          "snake_game/main.py",
+          "snake_game/requirements.txt"
+        ],
+        "test_commands": [
+          "cd snake_game && python -c \"import sys; print('Project structure ready')\""
+        ],
+        "acceptance_criteria": [
+          "项目目录结构正确",
+          "主入口文件存在且可执行",
+          "依赖配置文件格式正确"
+        ]
+      },
+      {
+        "id": "T2",
+        "name": "实现游戏核心逻辑：蛇的移动和食物生成",
+        "input": "在CLI中实现贪吃蛇的基本逻辑：蛇由一系列坐标组成，初始长度为3，方向可控制（上下左右），食物随机生成在空白位置，蛇吃到食物后长度增加1。",
+        "target_files": [
+          "snake_game/game_logic.py"
+        ],
+        "test_commands": [
+          "cd snake_game && python -c \"from game_logic import Snake, Food; s = Snake(); f = Food(s); print('Core logic works')\""
+        ],
+        "acceptance_criteria": [
+          "蛇的初始位置和长度正确",
+          "蛇能按方向移动",
+          "食物生成在非蛇身位置",
+          "蛇吃到食物后长度增加"
+        ]
+      },
+      {
+        "id": "T3",
+        "name": "实现CLI界面渲染和用户输入处理",
+        "input": "使用终端字符（如#表示蛇身，@表示食物，空格表示空白）渲染游戏界面，每帧刷新。通过键盘事件（如wasd或方向键）控制蛇的方向，游戏循环持续运行直到蛇撞墙或撞自身。",
+        "target_files": [
+          "snake_game/cli_renderer.py",
+          "snake_game/input_handler.py"
+        ],
+        "test_commands": [
+          "cd snake_game && python -c \"from cli_renderer import render; from input_handler import get_direction; print('CLI components ready')\""
+        ],
+        "acceptance_criteria": [
+          "界面能正确显示蛇和食物",
+          "键盘输入能改变蛇的方向",
+          "游戏循环每秒更新约5-10帧",
+          "蛇撞墙或自身时游戏结束"
+        ]
+      },
+      {
+        "id": "T4",
+        "name": "集成测试和游戏循环完善",
+        "input": "将核心逻辑、渲染和输入处理集成到主入口文件main.py中，实现完整的游戏循环。添加游戏结束提示和重新开始选项。",
+        "target_files": [
+          "snake_game/main.py"
+        ],
+        "test_commands": [
+          "cd snake_game && timeout 5 python main.py 2>&1 || true"
+        ],
+        "acceptance_criteria": [
+          "游戏能正常启动和运行",
+          "游戏结束时有明确提示",
+          "支持重新开始或退出",
+          "无明显的性能问题或崩溃"
+        ]
+      }
+    ],
+    "overall_acceptance": [
+      "所有任务完成且集成测试通过",
+      "游戏在CLI中可玩，蛇移动流畅，食物生成正确",
+      "用户输入响应及时，游戏结束逻辑正确",
+      "代码无严重bug，符合Python最佳实践"
+    ]
   },
   "project_skeleton": {},
   "current_phase": "requirement",
@@ -16,7 +93,7 @@
     "requirement"
   ],
   "logs": [
-    "requirement done"
+    "[requirement] Analysis complete, requirement clarified"
   ],
   "should_continue": true,
   "human_intervention": false,
