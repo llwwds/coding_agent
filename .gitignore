@@ -31,3 +31,26 @@ Temporary Items
 
 # macOS generated files in zip (macOS 压缩包解压时常见的残留文件夹)
 __MACOSX/
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+
+# Logs & outputs
+workspace/logs/
+*.log
+
+# Delivery reports
+workspace/DELIVERY_REPORT.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Test / coverage
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/

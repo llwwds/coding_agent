@@ -1,0 +1,27 @@
+{
+  "requirement": "",
+  "clarified_requirement": "",
+  "tech_plan": "",
+  "task_template": {},
+  "project_skeleton": {},
+  "current_phase": "requirement",
+  "fix_rounds": 0,
+  "max_fix_rounds": 5,
+  "test_results": [
+    {
+      "phase": "full_test",
+      "passed": true
+    }
+  ],
+  "failure_analysis": [],
+  "performance_metrics": {},
+  "phase_history": [
+    "full_test"
+  ],
+  "logs": [
+    "full_test done"
+  ],
+  "should_continue": true,
+  "human_intervention": false,
+  "failed_at": null
+}

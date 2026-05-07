@@ -1,0 +1,33 @@
+{
+  "requirement": "test",
+  "clarified_requirement": "clarified",
+  "tech_plan": "",
+  "task_template": {},
+  "project_skeleton": {},
+  "current_phase": "requirement",
+  "fix_rounds": 0,
+  "max_fix_rounds": 5,
+  "test_results": [
+    {
+      "phase": "light_test",
+      "passed": true
+    },
+    {
+      "phase": "full_test",
+      "passed": true
+    }
+  ],
+  "failure_analysis": [],
+  "performance_metrics": {
+    "pass_rate": 100
+  },
+  "phase_history": [
+    "deliver"
+  ],
+  "logs": [
+    "deliver done"
+  ],
+  "should_continue": false,
+  "human_intervention": false,
+  "failed_at": null
+}

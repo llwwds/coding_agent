@@ -1,0 +1,31 @@
+{
+  "requirement": "",
+  "clarified_requirement": "",
+  "tech_plan": "",
+  "task_template": {},
+  "project_skeleton": {},
+  "current_phase": "requirement",
+  "fix_rounds": 1,
+  "max_fix_rounds": 5,
+  "test_results": [
+    {
+      "phase": "light_test",
+      "passed": false
+    }
+  ],
+  "failure_analysis": [
+    {
+      "failure_type": "test"
+    }
+  ],
+  "performance_metrics": {},
+  "phase_history": [
+    "fix"
+  ],
+  "logs": [
+    "fix done"
+  ],
+  "should_continue": true,
+  "human_intervention": false,
+  "failed_at": null
+}

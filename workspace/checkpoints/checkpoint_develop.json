@@ -1,0 +1,27 @@
+{
+  "requirement": "test",
+  "clarified_requirement": "clarified",
+  "tech_plan": "plan",
+  "task_template": {
+    "tasks": []
+  },
+  "project_skeleton": {
+    "directories": [],
+    "files": {}
+  },
+  "current_phase": "requirement",
+  "fix_rounds": 0,
+  "max_fix_rounds": 5,
+  "test_results": [],
+  "failure_analysis": [],
+  "performance_metrics": {},
+  "phase_history": [
+    "develop"
+  ],
+  "logs": [
+    "develop done"
+  ],
+  "should_continue": true,
+  "human_intervention": false,
+  "failed_at": null
+}
